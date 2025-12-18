@@ -1,3 +1,14 @@
+// Hamburger Menu
+
+const btnMenu = document.getElementById("btnMenu");
+const navMobile = document.getElementById("navMobile");
+const menuIconTarget = document.getElementById("menuIconTarget");
+
+btnMenu.addEventListener("click", () => {
+  const isHidden = navMobile.classList.toggle("hidden");
+  menuIconTarget.setAttribute("href", isHidden ? "#menu" : "#close");
+})
+
 // Active States Logic
 
 const navLinks = document.getElementById("navLinks");
@@ -58,7 +69,6 @@ function togglePlayback() {
     btnText.textContent = "PAUSE";
   } else {
     video.pause();
-    // Switch symbol to Play
     iconTarget.setAttribute("href", "#play");
     btnText.textContent = "PLAY";
   }
@@ -76,3 +86,14 @@ window.addEventListener('load', () => {
     });
 });
 
+// Clock
+
+function updateClock() {
+    const now = new Date();
+    const timeString = now.getHours().toString().padStart(2, '0') + ":" + 
+                       now.getMinutes().toString().padStart(2, '0') + ":" + 
+                       now.getSeconds().toString().padStart(2, '0');
+    document.getElementById('system-time').innerText = "SYSTEM_TIME: " + timeString;
+}
+setInterval(updateClock, 1000);
+updateClock();
