@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The Fifth Dimension is a premier provider of cinematic visual experiences, specializing in high-quality video production and photography.">
+  <meta name="keywords" content="Videography, Photography, Cinematic Video, Event Production, Wedding Photography, Commercial Video, Visual Storytelling, The Fifth Dimension">
+  <meta property="og:title" content="The Fifth Dimension | Cinematic Visuals">
+  <meta property="og:description" content="Cinematic Visuals. Beyond the Frame. The Fifth Dimension specializes in high-end video production and photography.">
+  <meta property="og:image" content="https://preachervr.github.io/the-fifth-dimension/images/wedding-picture.jpg">
+  <meta property="og:url" content="https://preachervr.github.io/the-fifth-dimension/">
+  <meta property="og:type" content="website">
+  <title>Aftercore Studio</title>
+  <link href="dist/output.css" rel="stylesheet">
+  <link rel="canonical" href="https://preachervr.github.io/the-fifth-dimension/index.html">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" href="images/favicon-16x16.png">
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Syne:wght@400..800&family=VT323&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-950 min-h-screen font-fira text-zinc-200">
+  <div class="min-h-screen flex flex-col">
+    <header class="w-full bg-midnightslate-950 font-syne sticky top-0 z-50">
+      <section>
+        <nav id="navLinks" class="hidden md:flex justify-between items-center py-2 md:py-4 lg:py-6 px-4 md:px-8 lg:px-16 z-2">
+          <div class="flex flex-row items-center justify-center gap-2 cursor-pointer transition-all duration-200 
+          ease-in">
+            <div class="w-8 md:w-12 lg:w-16 h-auto">
+              <a href="index.html"><img src="images/ac-studio-logo.jpg" alt="The Fifth Dimension Logo" class="w-full h-auto object-contain rounded-full 
+                hover:[box-shadow:0_0_15px_var(--color-neonpink-500)] transition-all duration-200 ease-in"></a>
+            </div>
+            <p class="text-base md:text-lg lg:text-xl [text-shadow:5px_0px_2px_var(--color-neonpink-500),-5px_0px_2px_var(--color-neonwave-500)]">Aftercore Studio</p>
+          </div>
+          <div class="flex gap-4 md:gap-8 lg:gap-12 text-base md:text-lg lg:text-xl">
+            <div class="flex flex-col justify-center items-center gap-2">
+              <a href="main.html" class="transition-all duration-200 px-2 py-1 hover:text-neonpink-400 hover:bg-neonpink-500/10 hover:shadow-[0_0_15px_var(--color-neonpink-950)]">[ DATA_STREAM ]</a>
+              <p class="text-sm nav-status">SYSTEM_READY</p>
+            </div>
+            <div class="flex flex-col justify-center items-center gap-2">
+              <a href="archive.html" class="transition-all duration-200 px-2 py-1 hover:text-neonpink-400 hover:bg-neonpink-500/10 hover:shadow-[0_0_15px_var(--color-neonpink-950)]">[ ARCHIVE ]</a>
+              <p class="text-sm nav-status text-vividcrimson-500">ENCRYPTION_ACTIVE</p>
+            </div>
+            <div class="flex flex-col justify-center items-center gap-2">
+              <a href="archive.html" class="transition-all duration-200 px-2 py-1 hover:text-neonpink-400 hover:bg-neonpink-500/10 hover:shadow-[0_0_15px_var(--color-neonpink-950)]">[ PERSONNEL ]</a>
+              <p class="text-sm nav-status text-vividcrimson-500">ENCRYPTION_ACTIVE</p>
+            </div>
+            <div class="flex flex-col justify-center items-center gap-2">
+              <a href="archive.html" class="transition-all duration-200 px-2 py-1 hover:text-neonpink-400 hover:bg-neonpink-500/10 hover:shadow-[0_0_15px_var(--color-neonpink-950)]">[ TRANSMIT ]</a>
+              <p class="text-sm nav-status text-vividcrimson-500">ENCRYPTION_ACTIVE</p>
+            </div>
+          </div>
+          <button id="btnMenu" aria-label="Navigation Menu" aria-expanded="false" aria-controls="sidebar"><svg aria-hidden="true" class="block absolute md:hidden w-7 h-7 fill-midastouch-50 hover:fill-midastouch-200 
+          transition-all duration-200 z-5 right-1 cursor-pointer my-4 mx-6cursor-pointer"><use href="#menu"></use></svg></button>
+        </nav>
+        <button id="btnMenu" aria-label="Navigation Menu" aria-expanded="false" aria-controls="sidebar"><svg aria-hidden="true" class="block absolute md:hidden w-7 h-7 fill-midastouch-50 hover:fill-midastouch-200 
+          transition-all duration-200 z-5 right-1 cursor-pointer my-4 mx-6cursor-pointer"><use href="#menu"></use></svg></button>
+      </section>
+      <div id="sidebar" class="fixed inset-0 z-6 pointer-events-none opacity-0 transition-opacity duration-300"> 
+        <aside class="absolute left-0 top-0 h-full w-full bg-warmcanvas-100 font-prata text-midastouch-900 transform -translate-x-full transition-transform duration-300 ease-in-out flex flex-col p-6 gap-6">
+          <div class="flex justify-between items-center">
+            <div class="w-16 h-auto">
+              <a href="index.html"><img src="images/the-fifth-dimension.png" alt="The Fifth Dimension Logo" class="w-full h-full object-cover"></a>
+            </div>
+            <button id="closeSidebar" class="text-base hover:text-midastouch-200 cursor-pointer" aria-label="Close Sidebar">X</button>
+          </div>
+          <nav class="flex flex-col gap-6 text-2xl">
+            <a href="index.html" class="hover:text-midastouch-200 transition-all duration-200">Home</a>
+            <a href="portfolio.html" class="hover:text-midastouch-200 transition-all duration-200">Portfolio</a>
+            <a href="about.html" class="hover:text-midastouch-200 transition-all duration-200">About</a>
+            <a href="pricing.html" class="hover:text-midastouch-200 transition-all duration-200">Pricing</a>
+            <a href="contact.html" class="hover:text-midastouch-200 transition-all duration-200">Contact</a>
+          </nav>
+          <div class="flex gap-4 mt-2">
+              <a href="#" class="w-10 h-10 border border-midastouch-900 rounded-full flex items-center justify-center group hover:bg-midastouch-500 transition-all duration-300" 
+              aria-label="The Fifth Dimension on Instagram"><svg aria-hidden="true" class="w-7 h-7 fill-midastouch-900 group-hover:fill-admiralnavy-950 transition-colors duration-300"><use href="#instagram"></use></svg></a>
+              <a href="#" class="w-10 h-10 border border-midastouch-900 rounded-full flex items-center justify-center group hover:bg-midastouch-500 transition-all duration-300" 
+                aria-label="The Fifth Dimension on Instagram"><svg aria-hidden="true" class="w-7 h-7 fill-midastouch-900 group-hover:fill-admiralnavy-950 transition-colors duration-300"><use href="#facebook"></use></svg></a>
+              <a href="#" class="w-10 h-10 border border-midastouch-900 rounded-full flex items-center justify-center group hover:bg-midastouch-500 transition-all duration-300" 
+                aria-label="The Fifth Dimension on Instagram"><svg aria-hidden="true" class="w-7 h-7 fill-midastouch-900 group-hover:fill-admiralnavy-950 transition-colors duration-300"><use href="#tiktok"></use></svg></a>
+          </div>
+        </aside>
+      </div>
+    </header>
+    <main class="flex flex-col w-full leading-relaxed my-8 md:my-12 lg:my-16 gap-4 md:gap-8 lg:gap-16"> 
+    </main>
+    
+  </div>
+  <script src="js/main.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js" defer></script>
+</body>
+</html>
