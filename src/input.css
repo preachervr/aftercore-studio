@@ -152,3 +152,14 @@ body::after {
   z-index: 9998;
   pointer-events: none;
 }
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #09090b; /* gray-955 */
+}
+::-webkit-scrollbar-thumb {
+  background: #ec4899; /* neonpink-500 */
+  border: 2px solid #09090b;
+}
