@@ -109,3 +109,46 @@
   opacity: 0.2;
 }
 
+.crt-overlay {
+  background: linear-gradient(
+    rgba(18, 16, 16, 0) 50%, 
+    rgba(0, 0, 0, 0.1) 50%
+  ), 
+  linear-gradient(
+    90deg, 
+    rgba(255, 0, 0, 0.02), 
+    rgba(0, 255, 0, 0.01), 
+    rgba(0, 0, 255, 0.02)
+  );
+  background-size: 100% 3px, 3px 100%;
+  animation: flicker 0.15s infinite;
+}
+
+/* Simulated screen flicker */
+@keyframes flicker {
+  0% { opacity: 0.97; }
+  5% { opacity: 0.95; }
+  10% { opacity: 0.9; }
+  15% { opacity: 0.98; }
+  30% { opacity: 0.95; }
+  50% { opacity: 0.98; }
+  80% { opacity: 0.92; }
+  100% { opacity: 0.99; }
+}
+
+body::after {
+  content: " ";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: radial-gradient(
+    circle, 
+    rgba(18, 16, 16, 0) 50%, 
+    rgba(0, 0, 0, 0.2) 100%
+  );
+  z-index: 9998;
+  pointer-events: none;
+}
