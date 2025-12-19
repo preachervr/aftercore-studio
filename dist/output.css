@@ -881,6 +881,9 @@
     --tw-tracking: var(--tracking-widest);
     letter-spacing: var(--tracking-widest);
   }
+  .text-wrap {
+    text-wrap: wrap;
+  }
   .break-all {
     word-break: break-all;
   }
@@ -1503,6 +1506,12 @@
     @media (width >= 48rem) {
       font-size: var(--text-xs);
       line-height: var(--tw-leading, var(--text-xs--line-height));
+    }
+  }
+  .md\:break-normal {
+    @media (width >= 48rem) {
+      overflow-wrap: normal;
+      word-break: normal;
     }
   }
   .lg\:col-span-3 {
